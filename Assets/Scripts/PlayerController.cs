@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
     private Rigidbody2D rb;
+    [SerializeField]
+    private Animator animator;
 
     // Sebesség változók
     public float moveSpeed = 5f;  // Alap mozgás sebesség
@@ -20,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+
     }
 
     void Update()
@@ -30,7 +33,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        HandleMovementInput();  // Mozgás input
+        HandleMovementInput();
+        UpdateAnimator();
     }
 
     // Mozgás kezelése (séta, futás)
@@ -69,4 +73,27 @@ public class PlayerController : MonoBehaviour
             isRunning = false;
         }
     }
+    void UpdateAnimator()
+    {
+        if (animator != null)
+        {
+            // Debugging kiírás
+            Debug.Log($"Horizontal: {moveX}, Vertical: {moveY}");
+
+            if (moveX != 0 || moveY != 0)
+            {
+                animator.SetBool("IsMoving", true);  // Ha mozog, IsMoving true
+            }
+            else
+            {
+                animator.SetBool("IsMoving", false); // Ha nem mozog, IsMoving false
+            }
+
+            // Beállítjuk a vízszintes és függőleges mozgást
+            animator.SetFloat("Horizontal", moveX);
+            animator.SetFloat("Vertical", moveY);
+        }
+    }
+
+
 }
