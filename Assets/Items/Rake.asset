@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Rake
   itemIcon: {fileID: -2658678680662877083, guid: 829bba8ac501ca84b9a8d09838565004, type: 3}
+  isStackable: 0
   toolType: 1

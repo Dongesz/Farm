@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fcadb3fc944e1ec4db4047ae4a444241
+guid: f73c3489fecbfbc45be06dfa56ff7716
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -41876973439193433
-    second: AlbedoBase_XL_2d_game_background_with_a_sideways_pov_a_drak_p_1_0
+      213: 7293598183456022363
+    second: Apple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AlbedoBase_XL_2d_game_background_with_a_sideways_pov_a_drak_p_1_0
+      name: Apple_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1368
-        height: 768
+        width: 400
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ae63e15d193b6ff0800000000000000
-      internalID: -41876973439193433
+      spriteID: b5f945b97e0183560800000000000000
+      internalID: 7293598183456022363
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Apple_0: 7293598183456022363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

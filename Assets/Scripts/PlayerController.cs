@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
         if (animator != null)
         {
             // Debugging kiírás
-            Debug.Log($"Horizontal: {moveX}, Vertical: {moveY}");
+            // Debug.Log($"Horizontal: {moveX}, Vertical: {moveY}");
 
             if (moveX != 0 || moveY != 0)
             {
